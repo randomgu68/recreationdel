@@ -21,14 +21,20 @@ if is_player && check_canmove {
     
 	// movement speed control
 	if ((!auto_run && InputCheck(INPUT_VERB.CANCEL)) || (auto_run && !InputCheck(INPUT_VERB.CANCEL))) && moving {
-		running = true
-		
-		if spd < runspd // accelerate
-			spd += .2
+		running = true;
+		player_run_timer ++;
+        
+        if player_run_timer > 60
+            spd = basespd + (global.world == WORLD_TYPE.LIGHT ? 3 : 2.5);
+        else if player_run_timer > 10
+            spd = basespd + 2;
+        else 
+            spd = basespd + 1;
 	}
 	else {
-		running = false
-		spd = basespd // instantly return to base speed
+		running = false;
+		spd = basespd; // instantly return to base speed
+        player_run_timer = 0;
 	}
     
 	// move upon pressing keys
@@ -39,8 +45,10 @@ if is_player && check_canmove {
         
         if !array_contains(held_directions, target_dir)
             array_push(held_directions, target_dir)
-        if array_contains(held_directions, opposite_direction)
+        if array_contains(held_directions, opposite_direction) {
             array_delete(held_directions, array_get_index(held_directions, opposite_direction), 1)
+            player_run_timer = 0;
+        }
     }
     var __unset_dir = function(target_dir) {
         if !array_contains(held_directions, target_dir)
@@ -88,17 +96,21 @@ if is_player && check_canmove {
 	
 	// interact
 	if InputPressed(INPUT_VERB.SELECT) {
-		var w = 2
-		var __xw = -lengthdir_x(w, dir + 90)
-		var __yw = lengthdir_y(w, dir + 90)
-        
-        var __interactable_instances = instance_place_list_ext(x + __xw, y + __yw, array_concat([o_ow_interactable, o_actor_interactable], interactable_instances), false)
-        for (var i = 0; i < array_length(__interactable_instances); i ++) {
-            with __interactable_instances[i] {
-                if other._checkmove()
-                    event_user(0)
+        for (var w = 2; w < 15; w ++) {
+    		var __xw = -lengthdir_x(w, dir + 90)
+    		var __yw = lengthdir_y(w, dir + 90)
+            
+            var __interactable_instances = instance_place_list_ext(x + __xw, y + __yw, array_concat([o_ow_interactable, o_actor_interactable], interactable_instances), false)
+            for (var i = 0; i < array_length(__interactable_instances); i ++) {
+                with __interactable_instances[i] {
+                    if other._checkmove()
+                        event_user(0)
+                }
             }
+            if array_length(__interactable_instances) > 0
+                break;
         }
+		
 	}
 	
 	// menu
@@ -306,11 +318,13 @@ else if !is_in_battle && !is_enemy {
 // running sprites, walking sprites
 if !is_in_battle && !is_enemy && s_dynamic && !s_override {
 	if running && moving {
-		image_speed = lerp(s_walk_ispd, s_run_ispd, (get_leader().spd - basespd) / (runspd - basespd))
+		image_speed = s_run_ispd;
 		sprite_index = asset_get_index(sprite_get_name(s_move[dir]) + s_run_postfix)
 	}
-	else
+	else {
+		image_speed = s_walk_ispd;
 		sprite_index = s_move[dir]
+    }
 }
 
 { // timers and siners

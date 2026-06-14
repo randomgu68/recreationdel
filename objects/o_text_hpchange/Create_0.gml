@@ -27,7 +27,6 @@ __draw_to_sprite = function(_draw, _fallback = loc_sprite("damage_miss")) {
 
 stretch = .2
 xoff = 0
-align = 0 // 1 for right
 
 visual_x = x
 visual_y = y
@@ -38,6 +37,7 @@ y -= guipos_y()
 x *= 2
 y *= 2
 depth = -2000 - instance_number(object_index)
+image_blend = c_white;
 
 alarm[0] = 1 // animate
 visible = false
