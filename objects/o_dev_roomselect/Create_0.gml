@@ -33,7 +33,8 @@ item_categories = [
             room_test_cutscene,
             room_test_shops,
             room_test_loopback,
-            room_test_climbing
+            room_test_climbing,
+            room_cutscene_Base,
         ]
     },
     {

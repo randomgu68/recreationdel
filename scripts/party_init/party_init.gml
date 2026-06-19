@@ -280,7 +280,8 @@ function party_m_ralsei(_initialized_name) : party_m(_initialized_name) construc
     armor2 = new item_a_white_ribbon()
 	spells = [
 		new item_s_pacify(),
-		new item_s_healprayer()
+		new item_s_healprayer(),
+        new ex_items_hyper_heal()
 	]
 	
 	// sprites
