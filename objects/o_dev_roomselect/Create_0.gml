@@ -47,6 +47,9 @@ item_categories = [
             room_ex_church,
             room_ex_light_world,
             room_ex_multi_path,
+            room_cyberworld_maze,
+            room_lb_ex_field,
+            room_scroll_test
         ]
     }
 ]

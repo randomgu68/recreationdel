@@ -1,7 +1,13 @@
 global.party_names = ["kris","susie","ralsei"]
 
+if (memory_get("mustPlayCutscene",id)) {
+    instance_destroy()
+    exit
+}
+
 
 trigger_code = function () {
+    
     var krisxpos = party_get_inst("kris").x
     var krisypos = party_get_inst("kris").y
     
@@ -81,6 +87,10 @@ trigger_code = function () {
     cutscene_actor_move(party_get_inst("kris"), [new actor_movement(krisxpos,krisypos,10)],false)
     cutscene_actor_move(party_get_inst("susie"), [new actor_movement(susiexpos,susieypos,10)],false)
     cutscene_actor_move(party_get_inst("ralsei"), [new actor_movement(ralseixpos,ralseiypos,10)],false)
+    
+    cutscene_func(function (){
+        memory_flick("mustPlayCutscene",id)
+    })
     
     cutscene_player_canmove(true)
     

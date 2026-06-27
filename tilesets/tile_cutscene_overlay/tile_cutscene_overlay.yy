@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"tile_cutscene_overlay",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"tile_cutscene_overlay",
+  "out_columns":6,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"overlay",
+    "path":"folders/cutsceneanimatic/TIle Sets/overlay.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_overlay_tiles",
+    "path":"sprites/spr_overlay_tiles/spr_overlay_tiles.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":22,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":22,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":36,
+}

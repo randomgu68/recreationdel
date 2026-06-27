@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"tile_cutscene_cyberworld",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"tile_cutscene_cyberworld",
+  "out_columns":20,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"cyberworld",
+    "path":"folders/cutsceneanimatic/TIle Sets/cyberworld.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_cutscene_cyberworld_tiles",
+    "path":"sprites/spr_cutscene_cyberworld_tiles/spr_cutscene_cyberworld_tiles.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":22,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":22,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":420,
+}
