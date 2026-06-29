@@ -34,7 +34,6 @@ item_categories = [
             room_test_shops,
             room_test_loopback,
             room_test_climbing,
-            room_cutscene_Base,
         ]
     },
     {
@@ -48,8 +47,17 @@ item_categories = [
             room_ex_light_world,
             room_ex_multi_path,
             room_cyberworld_maze,
-            room_lb_ex_field,
-            room_scroll_test
+            room_lb_ex_field
+        ]
+    },
+    {
+        name: "My Creations",
+        keybind: ord("M"),
+        color: c_red,
+        items: [
+            room_scroll_test,
+            room_cutscene_Base,
+            room_field_test
         ]
     }
 ]
