@@ -59,6 +59,7 @@ item_categories = [
             room_cutscene_Base,
             room_field_test,
             room_block_example
+            room_ex_infinity_room,
         ]
     }
 ]
