@@ -58,8 +58,8 @@ item_categories = [
             room_scroll_test,
             room_cutscene_Base,
             room_field_test,
-            room_block_example
-            room_ex_infinity_room,
+            room_block_example,
+            room_ex_infinity_room
         ]
     }
 ]
