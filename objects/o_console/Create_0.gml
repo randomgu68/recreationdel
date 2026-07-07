@@ -97,6 +97,17 @@ registred_commands = {
         execute: function() {
             instance_create(o_dev_savewipe_prompt)
         }
+    },
+    t: {
+        name: "tp_mananger",
+        desc: "Let's you change the tp",
+        execute: function () {
+            if(instance_exists(o_enc)) {
+                instance_create(o_dev_tp_select)
+            } else {
+                show_debug_message("CONSOLE: o_enc not found, unable to change tp")
+            }
+        }
     }
 }
 

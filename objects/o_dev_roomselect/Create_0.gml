@@ -57,7 +57,8 @@ item_categories = [
         items: [
             room_scroll_test,
             room_cutscene_Base,
-            room_field_test
+            room_field_test,
+            room_block_example
         ]
     }
 ]
