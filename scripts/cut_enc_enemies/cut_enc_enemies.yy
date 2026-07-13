@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cut_enc_enemies",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cut_enc_enemies",
+  "parent":{
+    "name":"encounter",
+    "path":"folders/cutsceneanimatic/Scripts/encounter.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

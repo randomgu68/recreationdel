@@ -47,6 +47,7 @@ item_categories = [
             room_ex_light_world,
             room_ex_multi_path,
             room_cyberworld_maze,
+            room_ex_infinity_room,
             room_lb_ex_field
         ]
     },
@@ -58,8 +59,7 @@ item_categories = [
             room_scroll_test,
             room_cutscene_Base,
             room_field_test,
-            room_block_example,
-            room_ex_infinity_room
+            room_block_example
         ]
     }
 ]

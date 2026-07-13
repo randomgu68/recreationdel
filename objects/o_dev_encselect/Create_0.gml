@@ -5,6 +5,7 @@ item_list = [
 	enc_set_virovirokun,
 	ex_enc_set_shadowguys,
     ex_enc_set_spawn,
+    cut_enc_set_rudinn
 ]
 // feel free to add your encounters to the item list
 

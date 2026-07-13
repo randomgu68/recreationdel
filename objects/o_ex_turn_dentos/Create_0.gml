@@ -3,4 +3,4 @@ event_inherited()
 timer_end = undefined;
 current_cutscene = noone;
 
-pattern_pool = ["explosions"];
+pattern_pool = ["explosions","test"];

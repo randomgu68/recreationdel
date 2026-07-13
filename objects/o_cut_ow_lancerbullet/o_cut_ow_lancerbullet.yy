@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"o_cutscene_ow_lancerbullet",
+  "%Name":"o_cut_ow_lancerbullet",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_cutscene_ow_lancerbullet",
+  "name":"o_cut_ow_lancerbullet",
   "overriddenProperties":[],
   "parent":{
     "name":"bullets",
