@@ -17,10 +17,7 @@
     "name":"soul",
     "path":"folders/@Engine/objects/enc/ui elements/soul.yy",
   },
-  "parentObjectId":{
-    "name":"o_block",
-    "path":"objects/o_block/o_block.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

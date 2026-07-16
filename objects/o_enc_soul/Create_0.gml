@@ -1,4 +1,5 @@
-// the soul system based on the one made by jevilhumor (callum)
+// the soul and box system made by jevilhumor (callum)
+
 event_inherited();
 
 depth = DEPTH_ENCOUNTER.SOUL;
@@ -20,15 +21,29 @@ inst_aura = noone
 is_transitioning = true;
 transition_mode = 0;
 
-enum SOUL_COLOR {
-    RED
-};
-color = SOUL_COLOR.RED;
-
+color = SOUL_COLOR.BLUE
 surf = 0
 moving = false
 
 canmove = true
 outline = 0
 
+blue_trail = 0
+blue_z_buffer = 0
+blue_jumptimer_max = 4
+blue_jump_height = 12
+blue_jumptimer = 0
+blue_x_momentum = 0
+blue_y_momentum = 0
+blue_z_used = false
+blue_gravity_dir = DIR.DOWN;
+
+blue_y1 = 0
+blue_y2 = 0
+
 alarm[0] = 1;
+
+enum SOUL_COLOR {
+    RED,
+    BLUE
+}
