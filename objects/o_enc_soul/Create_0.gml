@@ -21,7 +21,7 @@ inst_aura = noone
 is_transitioning = true;
 transition_mode = 0;
 
-color = SOUL_COLOR.BLUE
+color = SOUL_COLOR.RED
 surf = 0
 moving = false
 
