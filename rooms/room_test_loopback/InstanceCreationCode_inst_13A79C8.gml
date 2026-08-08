@@ -1,0 +1,1 @@
+scr_shadow(0.4,c_black,80,40,5,5)

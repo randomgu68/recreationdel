@@ -1,0 +1,1 @@
+shadow_drawer(sprite_index,-1,x - left_Difference,y - top_Difference,sprite_width,sprite_height,x - x_pos_difference,y - y_pos_difference,image_xscale,image_yscale,image_blend,image_alpha)

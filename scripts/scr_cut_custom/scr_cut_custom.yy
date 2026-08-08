@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_cut_custom",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_cut_custom",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/cutsceneanimatic/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
